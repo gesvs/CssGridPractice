@@ -1,0 +1,185 @@
+:root {
+  --primary-color: rgb(236, 236, 236);
+  --secondary-color: rgb(21, 21, 21);
+  --blue-color: #2bc5cd;
+  --orange-color: #ff693d;
+  --border: 2px solid var(--blue-color);
+  --spacing: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 10px;
+  /* Prueba GIT */
+}
+
+/* Resto del CSS */
+body {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(266px, 1fr));
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  gap: 10px;
+}
+
+header {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: #2bc5cd;
+  color: rgb(236, 236, 236);
+  padding: 20px;
+  justify-items: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+header > p {
+grid-column: 1 / 2;
+grid-row: 2 / 3;
+text-align: justify;
+font-size: 15px;
+}
+
+main {
+  color: #2bc5cd;
+  display: grid;
+  align-content: center;
+  border: #2bc5cd;
+  border-color: #2bc5cd;
+  border-width: 2px;
+  border-style: solid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #ff693d;
+  color: rgb(236, 236, 236);
+  text-align: justify;
+  display: grid;
+  align-content: space-evenly;
+}
+
+
+button {
+  border: none;
+  width: 100px;
+  height: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.school {
+  display: grid;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg);
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.student {
+  display: grid;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/9e4ce16148dd5cbeb1065410/89f80abe-6acd-d8dc-a341-3e571206975b.jpg);
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.time {
+  display: grid;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/773a5aa425b1502aaac14708/f2b45624-c8f6-3aa0-0ee4-58adda3c89b0.jpg);
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.alumni {
+  display: grid;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/89993ff69c3e5244ad2bf1ba/blondestudentgirlissmilingholdingfoldernotebookherhandsuniversitybackground_101969664.jpg);
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+/* <a href="https://www.flaticon.es/iconos-gratis/torre-pc" title="torre pc iconos">Torre pc iconos creados por Freepik - Flaticon</a> */
+
+/* <a href="https://www.flaticon.es/iconos-gratis/torre-pc" title="torre pc iconos">Torre pc iconos creados por Freepik - Flaticon</a> */
+
+.alumni,
+.school,
+.student,
+.time {
+  background-size: cover;
+}
+
+@media  (max-width: 1200px){
+body {
+  background-color: rgb(236, 236, 236);
+}
+}
+
+@media  (max-width: 800px){
+  body {
+    display: grid;
+    grid-template-rows: repeat(8,minmax(266px, 1fr));
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background-color: orange;
+  }
+  header {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #2bc5cd;
+    color: rgb(236, 236, 236);
+    padding: 20px;
+    justify-items: center;
+  }
+  main {
+    color: #2bc5cd;
+    display: grid;
+    align-content: center;
+    border: #2bc5cd;
+    border-color: #2bc5cd;
+    border-width: 2px;
+    border-style: solid;
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  footer {
+    grid-column: 1/2;
+    grid-row: 8/9;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #ff693d;
+    color: rgb(236, 236, 236);
+    text-align: justify;
+    display: grid;
+    align-content: space-evenly;
+  }
+  .school {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .student {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .time {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .alumni {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  }
