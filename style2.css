@@ -35,10 +35,10 @@ h1 {
 }
 
 header > p {
-grid-column: 1 / 2;
-grid-row: 2 / 3;
-text-align: justify;
-font-size: 15px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  text-align: justify;
+  font-size: 15px;
 }
 
 main {
@@ -68,7 +68,6 @@ footer {
   display: grid;
   align-content: space-evenly;
 }
-
 
 button {
   border: none;
@@ -117,19 +116,18 @@ button {
   background-size: cover;
 }
 
-@media  (max-width: 1200px){
-body {
-  background-color: rgb(236, 236, 236);
-}
+@media (max-width: 1200px) {
+  body {
+    background-color: rgb(236, 236, 236);
+  }
 }
 
-@media  (max-width: 800px){
+@media (max-width: 800px) {
   body {
     display: grid;
-    grid-template-rows: repeat(8,minmax(266px, 1fr));
+    grid-template-rows: repeat(8, minmax(266px, 1fr));
     grid-template-columns: 1fr;
     gap: 10px;
-    background-color: orange;
   }
   header {
     display: grid;
@@ -182,4 +180,4 @@ body {
     grid-column: 1/2;
     grid-row: 7/8;
   }
-  }
+}
